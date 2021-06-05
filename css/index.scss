@@ -78,7 +78,7 @@ div.divider{
         display: flex;
         align-items: center;
 
-        img{
+        img,picture>img{
             width: 15vw;
             height: auto;
             border-radius: 100%;
@@ -243,7 +243,11 @@ div.divider{
                 }
             }
 
-            > img {
+            picture{
+                z-index: 1;
+            }
+
+            > img, >picture>img {
                 width: 150px;
                 height: 150px;
                 border: 10px solid #eaeaea;
@@ -393,7 +397,7 @@ div.divider{
     div.divider > div.content{
         flex-direction: column;
 
-        img{
+        img, picture, picture>img{
             margin: 0;
             width: 30vw;
             margin-bottom: 20px;
@@ -401,7 +405,7 @@ div.divider{
     }
 
     .page.experience .entry{
-        img{
+        img, picture, picture>img{
             width: 75px;
             height: 75px;
             border-width: 5px;
@@ -428,7 +432,7 @@ div.divider{
         flex-direction: column;
         align-items: center;
 
-        img{
+        img, picture{
             margin:0;
             width: 150px;
             height: 150px;
