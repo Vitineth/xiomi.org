@@ -26,8 +26,8 @@ hasWebP().then(function(support) {
     document.getElementById('change-back').onclick = change;
 
     if(!support){
-        console.log('?');
         document.getElementById('primary-card').style.backgroundImage = 'url("img/header-keyboard.png")';
+        document.getElementById('p2-card').style.backgroundImage = 'url("img/header-winter.jpg")';
     }
 
     const ext = support ? 'webp' : 'png';
