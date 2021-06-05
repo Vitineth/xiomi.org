@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/index.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono:wght@400;700&display=swap"
-        rel="stylesheet">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono:wght@400;700&display=swap"></noscript>
 
     <meta name="description"
         content="The landing page for xiomi.org, containing internal links to services and outbound links to externally provided systems and resources">
@@ -342,6 +343,12 @@
             </div>
         </div>
     </div>
+
+    <footer>
+        <div class="content">
+            <a href="/privacy">Privacy Policy</a>
+        </div>
+    </footer>
 
     <script src="js/index.js" defer></script>
 </body>
