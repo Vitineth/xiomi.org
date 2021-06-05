@@ -25,6 +25,11 @@ const hasWebP = (function() {
 hasWebP().then(function(support) {
     document.getElementById('change-back').onclick = change;
 
+    if(!support){
+        console.log('?');
+        document.getElementById('primary-card').style.backgroundImage = 'url("img/header-keyboard.png")';
+    }
+
     const ext = support ? 'webp' : 'png';
 
     const cardImages = [
